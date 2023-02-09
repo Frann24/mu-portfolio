@@ -1,0 +1,50 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 8vw;
+}
+.logo{
+  width: 3rem;
+}
+.back{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+.navbar{
+  display: block;
+}
+.sidebar .navbar{
+  display: none;
+}
+
+.btnMenu{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* margin: 12px 8px 0px 0px; */
+  padding: 0.6rem 4px 0 0;
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  .sidebar{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .btnMenu{
+    display: block;
+  }
+  .header{
+    margin: 12px;
+ 
+  }
+}
