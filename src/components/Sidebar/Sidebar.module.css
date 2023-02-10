@@ -43,3 +43,8 @@ aside {
     width: 50vw;
   }
 }
+@media (min-width: 1023px) {
+  aside{
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@ function Header() {
     <div>
       <header className={styles.header}>
         <img className={styles.logo} src={logo} alt="logo de fran" />
-        <div className={styles.btnMenu}><Hamburger size={32} toggled={isOpen} toggle={setOpen}/></div>
+        <div className={styles.btnMenu}><Hamburger color='#343A40' size={32} toggled={isOpen} toggle={setOpen}/></div>
         <div className={styles.navbar}><Navbar/></div>
       </header>
       <div className={styles.sidebar}>

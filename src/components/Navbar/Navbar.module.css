@@ -25,4 +25,15 @@ justify-content: space-between;
     flex-direction: row;
     gap: 64px;
   }
+  .menuItem{
+    border-bottom: 2px solid transparent;
+  }
+  .menuItem:hover{
+    border-color: #343A40;
+    cursor: pointer;
+    transition-duration: 300ms;
+   /*  transform: scale(.9); */
+    opacity: 0.8;
+  }
+
 }
