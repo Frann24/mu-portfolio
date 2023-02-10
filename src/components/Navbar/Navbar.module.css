@@ -1,0 +1,39 @@
+.nav{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.menu{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.menuItem{
+  list-style: none;
+  color: #343A40;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .nav{
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu{
+    flex-direction: row;
+    gap: 64px;
+  }
+  .menuItem{
+    border-bottom: 2px solid transparent;
+  }
+  .menuItem:hover{
+    border-color: #343A40;
+    cursor: pointer;
+    transition-duration: 300ms;
+   /*  transform: scale(.9); */
+    opacity: 0.8;
+  }
+
+}
