@@ -30,7 +30,7 @@
   font-size: 1.25rem;
   font-weight: 200;
 }
-section{
+.homeContainer{
   padding-top: 48px;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ section{
     width: 100vw;
     margin-bottom: 32px;  
   }
-  section{
+  .homecontainer{
     position: relative;
     margin-top: 15%;
     padding-top: 0;
@@ -144,7 +144,7 @@ section{
   }
 }
 @media (min-width: 1280px) {
-  section{
+  .homeContainer{
     margin-right: 96px;
 
   }
@@ -163,7 +163,7 @@ section{
     width: 95%;
     height: 95%;
   }
-  section{
+  .homeContainer{
     margin-right: 192px;
     
   }
