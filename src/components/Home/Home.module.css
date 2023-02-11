@@ -9,7 +9,7 @@
   background-color: #343A40;
   margin-right: 16px;
   padding: 16px;
-  padding-left: 16px;
+  
 }
 
 .box h3{
@@ -84,11 +84,11 @@
 
 @media (min-width: 1023px) {
   .box{
-    padding: 0 48px;
+    margin-left: 32px;
     width: 100vw;
     margin-bottom: 32px;  
   }
-  .homecontainer{
+  .homeContainer{
     position: relative;
     margin-top: 15%;
     padding-top: 0;
@@ -146,10 +146,10 @@
 @media (min-width: 1280px) {
   .homeContainer{
     margin-right: 96px;
-
   }
   .box{
-    margin-left: 64px;
+    padding: 0;
+    margin-left: 96px;
   }
 }
 
@@ -174,7 +174,7 @@
     object-fit: cover;
   }
   .box{
-    margin-left: 144px;
+    margin-left: 192px;
   }
   .box h3{
     font-size: 3rem;
