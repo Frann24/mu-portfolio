@@ -8,3 +8,9 @@
 body{
   background-color: #E9ECEF;
 }
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

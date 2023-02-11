@@ -9,7 +9,7 @@
   background-color: #343A40;
   margin-right: 16px;
   padding: 16px;
-  padding-left: 16px;
+  
 }
 
 .box h3{
@@ -30,7 +30,7 @@
   font-size: 1.25rem;
   font-weight: 200;
 }
-section{
+.homeContainer{
   padding-top: 48px;
   display: flex;
   flex-direction: column;
@@ -84,11 +84,11 @@ section{
 
 @media (min-width: 1023px) {
   .box{
-    padding: 0 48px;
+    margin-left: 32px;
     width: 100vw;
     margin-bottom: 32px;  
   }
-  section{
+  .homeContainer{
     position: relative;
     margin-top: 15%;
     padding-top: 0;
@@ -144,12 +144,12 @@ section{
   }
 }
 @media (min-width: 1280px) {
-  section{
+  .homeContainer{
     margin-right: 96px;
-
   }
   .box{
-    margin-left: 64px;
+    padding: 0;
+    margin-left: 96px;
   }
 }
 
@@ -163,7 +163,7 @@ section{
     width: 95%;
     height: 95%;
   }
-  section{
+  .homeContainer{
     margin-right: 192px;
     
   }
@@ -174,7 +174,7 @@ section{
     object-fit: cover;
   }
   .box{
-    margin-left: 144px;
+    margin-left: 192px;
   }
   .box h3{
     font-size: 3rem;
