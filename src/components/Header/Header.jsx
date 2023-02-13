@@ -8,7 +8,7 @@ import Sidebar from '../Sidebar/Sidebar'
 function Header() {
   const [isOpen, setOpen] = useState(false)
   return (
-    <div>
+    <div className={styles.headerContainer}>
       <header className={styles.header}>
         <img className={styles.logo} src={logo} alt="logo de fran" />
         <div className={styles.btnMenu}><Hamburger color='#343A40' size={32} toggled={isOpen} toggle={setOpen}/></div>

@@ -1,0 +1,126 @@
+.skill{
+  background-color: #343A40;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title{
+  font-size: 2rem;
+  color: #E9ECEF;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 48px;
+}
+.skillContainer{
+  margin: 0 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 64px 24px;
+  
+}
+.iconContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon{
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.tooltip{
+  position: absolute;
+  top: 60%;
+  margin-top: 12px;
+  padding: .55rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #000;
+  border-radius: 50px;
+  background-color: #F8F9FA;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+}
+
+.js:hover{
+  color: #f7df1e;
+}
+.php:hover{
+  color: #4f5b93;
+}
+.php{
+  font-size: 2.5rem;
+}
+.react:hover{
+  color: #00d8ff;
+}
+.node:hover{
+  color: #6cc24a;
+}
+.express:hover{
+  color: #caccd1;
+}
+.postgresql:hover{
+  color: #008bb9;
+}
+.mongodb:hover{
+  color: #589636;
+}
+.mysql:hover{
+  color: #00758f;
+}
+.tailwind:hover{
+  color: #38bdf8;
+}
+.bootstrap:hover{
+  color: #563d7c;
+
+}
+.materialui:hover{
+  color: #146eb4;
+}
+.figma:hover{
+  color: #da1884;
+}
+@media (min-width: 1536px){
+  .skillContainer{
+    margin: 0 192px;
+  }
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.iconContainer:hover .tooltip{
+  opacity: 0.9;
+  top: 100%;
+  z-index: 1;
+}
+
+.tooltip:hover{
+  display: none;
+}
+@media (min-width: 1024px){
+  .skillContainer{
+    margin: 0 24px;
+  }
+}
+@media (min-width: 1280px){
+  .skillContainer{
+    margin: 0 48px;
+  }
+}
+@media (min-width: 1536px){
+  .skillContainer{
+    margin: 0 96px;
+  }
+}
