@@ -1,8 +1,15 @@
+.headerContainer{
+  background-color: #E9ECEF;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 2px 0;
+}
 .header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 16px 48px;
+  margin: 16px;
 }
 .logo{
   width: 3rem;
@@ -26,9 +33,9 @@
 .btnMenu{
   display: none;
   position: absolute;
-  right: 8px;
-  /* margin: 12px 8px 0px 0px; */
+  right: 0;
   z-index: 1;
+  margin: 8px;
 }
 
 @media (max-width: 1023px) {
@@ -40,21 +47,30 @@
   }
   .btnMenu{
     display: block;
-    
-    padding: 0;
-    margin: 0;
+
+  }
+}
+@media (min-width: 1024px){
+  .headerContainer{
+    padding: 1px 0;
   }
   .header{
-    margin: 16px 16px 0 16px;
+    margin: 16px 48px;
   }
 }
 @media (min-width: 1280px) {
+  .headerContainer{
+    padding: 16px 0;
+  }
   .header{
-    margin: 16px 96px 0 96px;
+    margin: 0 96px;
   }
 }
 @media (min-width: 1536px) {
+  .headerContainer{
+    padding: 16px 0;
+  }
   .header{
-    margin: 24px 192px 0 192px 
+    margin: 0 192px;
   }
 }

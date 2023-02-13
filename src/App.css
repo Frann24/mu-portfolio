@@ -7,10 +7,20 @@
 
 body{
   background-color: #E9ECEF;
+  overflow-x: hidden;
 }
 
 main{
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 50vh;
 }
+
+.headerFixed{
+  background-color: red;
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+

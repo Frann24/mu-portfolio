@@ -1,8 +1,6 @@
 .home{
-  margin-top: -60px; 
-  padding-top: 48px;
+  /* margin-top: -64px;  */
   height: 100vh;
-  
 }
 .box{
   color: #E9ECEF;
@@ -80,6 +78,8 @@
   padding-right: 80px;
   object-fit: cover;
   filter: grayscale(1) brightness(1.1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 @media (min-width: 1023px) {
@@ -123,7 +123,6 @@
   .lines{
     display: flex;
     flex-direction: column;
-    gap: 16px;
   }
   .lines div{
     z-index: 0;
@@ -212,5 +211,9 @@
   50% {
     top: 93%;
   }
+}
+.containerImg div img:hover{
+  filter: none;
+  transform: rotate(-45deg) scale(0.9);
 }
 
