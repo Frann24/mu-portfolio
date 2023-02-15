@@ -27,8 +27,13 @@
     margin: 0 128px;
   }
 }
-@media (min-width: 1024px){
+@media (min-width: 1280px){
   .projects{
-    margin: 0 256px;
+    margin: 0 192px;
+  }
+}
+@media (min-width: 1536px){
+  .projects{
+    margin: 0 360px;
   }
 }
