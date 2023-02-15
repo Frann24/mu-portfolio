@@ -1,7 +1,14 @@
+.home{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20vh;
+}
 .homeContainer{
   display: flex;
   flex-direction: column;
-  height: 656px;
+  /* height: 656px; */
 }
 .backBox{
   background-color: #343A40;
@@ -34,8 +41,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 50%;
-  margin: auto;
+  margin-top: 92px;
+
 }
 
 .containerImg div{
@@ -78,6 +85,7 @@
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
+
 @media (min-width: 640px) {
   .backBox{
     margin-right: 32px;
@@ -110,8 +118,8 @@
 
 @media (min-width: 1024px) {
   .home{
-    height: 75vh;
-    position: relative;
+    display: block;
+    height: 85vh;
   }
   .homeContainer{
     height: auto;
@@ -148,6 +156,7 @@
     align-items: center;
     position: relative;
   }
+  
   .lines :first-child{
     z-index: 0;
     height: 16px;
@@ -189,10 +198,10 @@
 
 @media (min-width: 1536px) {
   .homeContainer{
-    margin-right: 256px;
+    margin-right: 360px;
   }
   .containerImg{
-    right: 256px;
+    right: 312px;
   }
   .containerImg div{
     width: 350px;
@@ -209,7 +218,7 @@
     object-fit: cover;
   }
   .box{
-    padding-left: 256px;
+    padding-left: 360px;
   }
   .box h3{
     font-size: 2.5rem;
@@ -221,7 +230,7 @@
     font-size: 2.2rem;
   }
   .lines :last-child{
-    margin-right: 256px;
+    margin-right: 360px;
   }
 }
 
@@ -231,13 +240,16 @@
   justify-content: center;
   animation: MoveUpDown 2s linear infinite;
   position: absolute;
-  z-index: -1;
+  bottom: 0;
+  /* z-index: -1; */
 }
 .down{
   font-size: 3rem;
   color: #343A40;
+
 }
 .btnDown{
+  bottom: 0;
   border: none;
   background-color: transparent;
 }
@@ -245,10 +257,11 @@
 
 @keyframes MoveUpDown {
   0%, 100% {
-    top: 91%;
+    bottom: -16px;
   }
   50% {
-    top: 93%;
+    /* top: 93%; */
+    bottom: 8px;
   }
 }
 .containerImg div img:hover{
