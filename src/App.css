@@ -11,9 +11,10 @@ body{
 }
 
 main{
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 50vh;
+  gap: 128px;
 }
 
 .headerFixed{

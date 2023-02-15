@@ -1,13 +1,15 @@
-.home{
-  /* margin-top: -64px;  */
-  height: 100vh;
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  height: 656px;
+}
+.backBox{
+  background-color: #343A40;
+  margin-right: 16px;
 }
 .box{
   color: #E9ECEF;
-  background-color: #343A40;
-  margin-right: 16px;
   padding: 16px;
-  
 }
 
 .box h3{
@@ -28,29 +30,24 @@
   font-size: 1.25rem;
   font-weight: 200;
 }
-.homeContainer{
-  padding-top: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 128px;
-}
 .containerImg{
   position: relative;
   display: flex;
   justify-content: center;
+  height: 50%;
+  margin: auto;
 }
 
 .containerImg div{
   width: 200px;
   height: 200px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .cuadrado1{
   background-color: #495057;
   transform: rotate(45deg);
   margin-left: 32px;
-  
 }
 .cuadrado2{
   background-color: #343A40;
@@ -81,35 +78,66 @@
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-
-@media (min-width: 1023px) {
+@media (min-width: 640px) {
+  .backBox{
+    margin-right: 32px;
+  }
   .box{
-    margin-left: 32px;
-    width: 100vw;
-    margin-bottom: 32px;  
-  }
-  .homeContainer{
-    position: relative;
-    margin-top: 15%;
-    padding-top: 0;
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
-    background-color: #343A40;
-    margin-right: 48px;
-  }
-  .containerImg{
-    z-index: 1;
+    padding-left: 32px;
   }
   .containerImg div{
+    width: 256px;
+    height: 256px;
+  }
+  .containerImg div img{
+    width: 300%;
+    padding-bottom: 160px;
+    padding-right: 288px;
+  }
+  .cuadrado2 div {
+    width: 95%;
+    height: 95%;
+  }
+}
+@media (min-width: 768px) {
+  .backBox{
+    margin-right: 64px;
+  }
+  .box{
+    padding-left: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home{
+    height: 75vh;
+    position: relative;
+  }
+  .homeContainer{
+    height: auto;
+    margin-top: 128px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #343A40;
+    margin-right: 128px;
+  }
+  .box{
+    padding: 48px 0 48px 128px;  
+  }
+  .containerImg{
+    position: absolute;
+    right: 64px;
+    z-index: 1;
+  }
+  /* .containerImg div{
     width: 300px;
     height: 300px;
     z-index: -1;
-  }
+  } */
   .containerImg div img{
     width: 250%;
     padding-bottom: 128px;
-    padding-right: 250px;
+    padding-right: 192px;
     object-fit: cover;
   }
   .cuadrado2 div {
@@ -120,16 +148,17 @@
     align-items: center;
     position: relative;
   }
-  .lines{
-    display: flex;
-    flex-direction: column;
-  }
-  .lines div{
+  .lines :first-child{
     z-index: 0;
-    margin-top: -32px;
     height: 16px;
     background-color: #E9ECEF;
-    margin-right: 48px;
+
+  }
+  .lines :last-child{
+    z-index: 0;
+    height: 16px;
+    background-color: #343A40;
+    margin-right: 128px;
   }
   
   .box h3{
@@ -142,47 +171,57 @@
     font-size: 1.8rem;
   }
 }
+
 @media (min-width: 1280px) {
   .homeContainer{
-    margin-right: 96px;
+    margin-right: 192px;
   }
   .box{
-    padding: 0;
-    margin-left: 96px;
+    padding-left: 192px;
+  }
+  .containerImg{
+    right: 128px;
+  }
+  .lines :last-child{
+    margin-right: 192px;
   }
 }
 
 @media (min-width: 1536px) {
+  .homeContainer{
+    margin-right: 256px;
+  }
+  .containerImg{
+    right: 256px;
+  }
   .containerImg div{
-    width: 400px;
-    height: 400px;
-    z-index: -1;
+    width: 350px;
+    height: 350px;
   }
   .cuadrado2 div {
     width: 95%;
     height: 95%;
   }
-  .homeContainer{
-    margin-right: 192px;
-    
-  }
   .containerImg div img{
-    width: 250%;
-    padding-bottom: 250px;
-    padding-right: 350px;
+    width: 275%;
+    padding-bottom: 272px;
+    padding-right: 368px;
     object-fit: cover;
   }
   .box{
-    margin-left: 192px;
+    padding-left: 256px;
   }
   .box h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }  
   .box h1{
     font-size: 4rem;
   }
   .box h4{
     font-size: 2.2rem;
+  }
+  .lines :last-child{
+    margin-right: 256px;
   }
 }
 
@@ -214,6 +253,6 @@
 }
 .containerImg div img:hover{
   filter: none;
-  transform: rotate(-45deg) scale(0.9);
+  transform: rotate(-45deg) scale(0.95);
 }
 

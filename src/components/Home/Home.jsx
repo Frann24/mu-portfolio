@@ -7,10 +7,12 @@ function Home() {
   return (
     <div className={styles.home}>
     <section className={styles.homeContainer}>
-      <div className={styles.box}>
-        <h3><span>Hola!,</span> mi nombre es</h3>
-        <h1>Franco Ferreyra</h1>
-        <h4>Full Stack Developer</h4>
+      <div className={styles.backBox}>
+        <div className={styles.box}>
+          <h3><span>Hola!,</span> mi nombre es</h3>
+          <h1>Franco Ferreyra</h1>
+          <h4>Full Stack Developer</h4>
+        </div>
       </div>
       <div className={styles.containerImg}>
         <div className={styles.cuadrado1}></div>
@@ -20,6 +22,7 @@ function Home() {
       </div>
     </section>
       <div className={styles.lines}>
+        <div></div>
         <div></div>
       </div>
       <div className={styles.btnContainer}><button className={styles.btnDown}><BsChevronCompactDown className={styles.down}/></button></div>
