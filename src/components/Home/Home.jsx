@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Home.module.css'
 import img from '../../assets/my2.jpg'
 import { BsChevronCompactDown } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
         <div></div>
         <div></div>
       </div>
-      <div className={styles.btnContainer}><button className={styles.btnDown}><BsChevronCompactDown className={styles.down}/></button></div>
+      <div className={styles.btnContainer}><Link to='about' smooth={true} className={styles.btnDown}><BsChevronCompactDown className={styles.down}/></Link></div>
     </div>
   )
 }
