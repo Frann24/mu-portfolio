@@ -5,7 +5,7 @@ import { BsChevronCompactDown } from 'react-icons/bs';
 
 function Home() {
   return (
-    <div className={styles.home}>
+    <div id='home' className={styles.home}>
     <section className={styles.homeContainer}>
       <div className={styles.backBox}>
         <div className={styles.box}>

@@ -3,11 +3,13 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 
 body{
   background-color: #E9ECEF;
   overflow-x: hidden;
+  position: relative;
 }
 
 main{
@@ -16,12 +18,3 @@ main{
   flex-direction: column;
   gap: 128px;
 }
-
-.headerFixed{
-  background-color: red;
-  position: sticky;
-  width: 100vw;
-  top: 0;
-  left: 0;
-}
-
