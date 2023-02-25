@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { allProjects } from "../../utils/projects";
 import Project from "./Project";
 import styles from "./Projects.module.css";

@@ -5,6 +5,7 @@ import About from './components/About/About'
 import Skill from './components/Skill/Skill';
 import Projects from './components/Project/Projects';
 import Modal from './components/modal/Modal';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
     <div id='home' className="App">
       <Header/>     
       <main>
-        
         <Home />
         <div id='about'></div>
         <About/>
@@ -21,6 +21,7 @@ function App() {
         <Projects/>
       </main>
       <Modal/>
+      <Footer/>
     </div>
   );
 }

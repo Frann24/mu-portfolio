@@ -241,26 +241,24 @@
   animation: MoveUpDown 2s linear infinite;
   position: absolute;
   bottom: 0;
-  /* z-index: -1; */
 }
+
 .down{
   font-size: 3rem;
   color: #343A40;
-
 }
 .btnDown{
   bottom: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
-
 
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: -16px;
   }
   50% {
-    /* top: 93%; */
     bottom: 8px;
   }
 }
