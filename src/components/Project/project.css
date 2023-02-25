@@ -1,0 +1,9 @@
+.mySwiper{
+  height: 100%;
+  position: relative;
+  overflow: visible;
+
+}
+.swiper, swiper-container {
+  overflow: visible !important;
+}
