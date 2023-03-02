@@ -1,0 +1,27 @@
+.hidden{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 5;
+  transform: translateX(150%);
+  transition: all .3s ease-in-out ;
+}
+.show{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 5;
+  transform: translateX(0);
+  transition: all .3s ease-in-out ;
+}
+.btn__up{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon{
+  font-size: 2rem;
+  color:  #212529;;
+  background-color: #E9ECEF;
+  border-radius: 50%;
+}

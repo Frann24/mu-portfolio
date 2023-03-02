@@ -6,12 +6,14 @@ import Skill from './components/Skill/Skill';
 import Projects from './components/Project/Projects';
 import Modal from './components/modal/Modal';
 import Footer from './components/Footer/Footer';
+import BtnToTop from './components/BtnToTop/BtnToTop';
 
 
 function App() {
   return (
     <div id='home' className="App">
-      <Header/>     
+      <Header/>
+      <BtnToTop/>
       <main>
         <Home />
         <div id='about'></div>
